@@ -32,6 +32,9 @@ importers:
       '@angular/router':
         specifier: ~19.0.0
         version: 19.0.4(@angular/common@19.0.4(@angular/core@19.0.4(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.4(rxjs@7.8.1)(zone.js@0.15.0))(@angular/platform-browser@19.0.4(@angular/animations@19.0.4(@angular/core@19.0.4(rxjs@7.8.1)(zone.js@0.15.0)))(@angular/common@19.0.4(@angular/core@19.0.4(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.4(rxjs@7.8.1)(zone.js@0.15.0)))(rxjs@7.8.1)
+      '@nx/angular':
+        specifier: ^20.2.2
+        version: 20.2.2(ydb34jcdwkz6gwygnoeq5hhkly)
       rxjs:
         specifier: ~7.8.0
         version: 7.8.1
@@ -66,9 +69,9 @@ importers:
       '@eslint/js':
         specifier: ^9.8.0
         version: 9.16.0
-      '@nx/angular':
-        specifier: ^20.2.2
-        version: 20.2.2(ydb34jcdwkz6gwygnoeq5hhkly)
+      '@module-federation/enhanced':
+        specifier: 0.7.6
+        version: 0.7.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.3)(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.15)))
       '@nx/devkit':
         specifier: 20.2.2
         version: 20.2.2(nx@20.2.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.15))(@swc/types@0.1.17)(typescript@5.6.3))(@swc/core@1.5.29(@swc/helpers@0.5.15)))
@@ -90,6 +93,9 @@ importers:
       '@nx/web':
         specifier: 20.2.2
         version: 20.2.2(@babel/traverse@7.26.4)(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.15))(@swc/types@0.1.17)(typescript@5.6.3))(@swc/core@1.5.29(@swc/helpers@0.5.15))(@types/node@22.10.2)(nx@20.2.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.15))(@swc/types@0.1.17)(typescript@5.6.3))(@swc/core@1.5.29(@swc/helpers@0.5.15)))(typescript@5.6.3)
+      '@nx/webpack':
+        specifier: 20.2.2
+        version: 20.2.2(@babel/traverse@7.26.4)(@rspack/core@1.1.6(@swc/helpers@0.5.15))(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.15))(@swc/types@0.1.17)(typescript@5.6.3))(@swc/core@1.5.29(@swc/helpers@0.5.15))(@types/node@22.10.2)(nx@20.2.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.15))(@swc/types@0.1.17)(typescript@5.6.3))(@swc/core@1.5.29(@swc/helpers@0.5.15)))(typescript@5.6.3)
       '@nx/workspace':
         specifier: 20.2.2
         version: 20.2.2(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.15))(@swc/types@0.1.17)(typescript@5.6.3))(@swc/core@1.5.29(@swc/helpers@0.5.15))
@@ -6553,7 +6559,7 @@ snapshots:
       typescript: 5.6.3
       webpack: 5.96.1(@swc/core@1.5.29(@swc/helpers@0.5.15))(esbuild@0.24.0)
       webpack-dev-middleware: 7.4.2(webpack@5.96.1(@swc/core@1.5.29(@swc/helpers@0.5.15))(esbuild@0.24.0))
-      webpack-dev-server: 5.1.0(webpack@5.88.0(@swc/core@1.5.29(@swc/helpers@0.5.15)))
+      webpack-dev-server: 5.1.0(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.15)))
       webpack-merge: 6.0.1
       webpack-subresource-integrity: 5.1.0(webpack@5.96.1(@swc/core@1.5.29(@swc/helpers@0.5.15))(esbuild@0.24.0))
     optionalDependencies:
@@ -6583,7 +6589,7 @@ snapshots:
       '@angular-devkit/architect': 0.1900.5(chokidar@4.0.1)
       rxjs: 7.8.1
       webpack: 5.96.1(@swc/core@1.5.29(@swc/helpers@0.5.15))(esbuild@0.24.0)
-      webpack-dev-server: 5.1.0(webpack@5.88.0(@swc/core@1.5.29(@swc/helpers@0.5.15)))
+      webpack-dev-server: 5.1.0(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.15)))
     transitivePeerDependencies:
       - chokidar
 
@@ -8039,6 +8045,29 @@ snapshots:
     optionalDependencies:
       typescript: 5.6.3
       webpack: 5.88.0(@swc/core@1.5.29(@swc/helpers@0.5.15))
+    transitivePeerDependencies:
+      - bufferutil
+      - debug
+      - react
+      - react-dom
+      - supports-color
+      - utf-8-validate
+
+  '@module-federation/enhanced@0.7.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.3)(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.15)))':
+    dependencies:
+      '@module-federation/bridge-react-webpack-plugin': 0.7.6
+      '@module-federation/data-prefetch': 0.7.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@module-federation/dts-plugin': 0.7.6(typescript@5.6.3)
+      '@module-federation/managers': 0.7.6
+      '@module-federation/manifest': 0.7.6(typescript@5.6.3)
+      '@module-federation/rspack': 0.7.6(typescript@5.6.3)
+      '@module-federation/runtime-tools': 0.7.6
+      '@module-federation/sdk': 0.7.6
+      btoa: 1.2.1
+      upath: 2.0.1
+    optionalDependencies:
+      typescript: 5.6.3
+      webpack: 5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.15))
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -13419,17 +13448,6 @@ snapshots:
 
   webidl-conversions@7.0.0: {}
 
-  webpack-dev-middleware@7.4.2(webpack@5.88.0(@swc/core@1.5.29(@swc/helpers@0.5.15))):
-    dependencies:
-      colorette: 2.0.20
-      memfs: 4.15.0
-      mime-types: 2.1.35
-      on-finished: 2.4.1
-      range-parser: 1.2.1
-      schema-utils: 4.3.0
-    optionalDependencies:
-      webpack: 5.88.0(@swc/core@1.5.29(@swc/helpers@0.5.15))
-
   webpack-dev-middleware@7.4.2(webpack@5.96.1(@swc/core@1.5.29(@swc/helpers@0.5.15))(esbuild@0.24.0)):
     dependencies:
       colorette: 2.0.20
@@ -13452,7 +13470,7 @@ snapshots:
     optionalDependencies:
       webpack: 5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.15))
 
-  webpack-dev-server@5.1.0(webpack@5.88.0(@swc/core@1.5.29(@swc/helpers@0.5.15))):
+  webpack-dev-server@5.1.0(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.15))):
     dependencies:
       '@types/bonjour': 3.5.13
       '@types/connect-history-api-fallback': 1.5.4
@@ -13480,10 +13498,10 @@ snapshots:
       serve-index: 1.9.1
       sockjs: 0.3.24
       spdy: 4.0.2
-      webpack-dev-middleware: 7.4.2(webpack@5.88.0(@swc/core@1.5.29(@swc/helpers@0.5.15)))
+      webpack-dev-middleware: 7.4.2(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.15)))
       ws: 8.18.0
     optionalDependencies:
-      webpack: 5.88.0(@swc/core@1.5.29(@swc/helpers@0.5.15))
+      webpack: 5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.15))
     transitivePeerDependencies:
       - bufferutil
       - debug

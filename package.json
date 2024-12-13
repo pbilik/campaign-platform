@@ -14,7 +14,7 @@
     "@angular/compiler-cli": "~19.0.0",
     "@angular/language-service": "~19.0.0",
     "@eslint/js": "^9.8.0",
-    "@nx/angular": "^20.2.2",
+    "@module-federation/enhanced": "0.7.6",
     "@nx/devkit": "20.2.2",
     "@nx/eslint": "20.2.2",
     "@nx/eslint-plugin": "20.2.2",
@@ -22,6 +22,7 @@
     "@nx/playwright": "20.2.2",
     "@nx/vite": "20.2.2",
     "@nx/web": "20.2.2",
+    "@nx/webpack": "20.2.2",
     "@nx/workspace": "20.2.2",
     "@playwright/test": "^1.36.0",
     "@schematics/angular": "~19.0.0",
@@ -55,7 +56,7 @@
     "@angular/platform-browser-dynamic": "~19.0.0",
     "@angular/router": "~19.0.0",
     "rxjs": "~7.8.0",
-    "zone.js": "~0.15.0"
-  },
-  "type": "module"
+    "zone.js": "~0.15.0",
+    "@nx/angular": "^20.2.2"
+  }
 }

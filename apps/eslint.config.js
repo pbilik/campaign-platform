@@ -1,13 +1,10 @@
-const { FlatCompat } = require('@eslint/eslintrc');
 const nx = require('@nx/eslint-plugin');
-const compat = new FlatCompat({
-  baseDirectory: __dirname
-});
+const baseConfig = require('../eslint.config.js');
 
 module.exports = [
-  ...compat.config({
-    extends: ['plugin:@nx/angular', 'plugin:@nx/angular-template']
-  }),
+  ...baseConfig,
+  ...nx.configs['flat/angular'],
+  ...nx.configs['flat/angular-template'],
   {
     files: ['**/*.ts'],
     rules: {
@@ -31,6 +28,7 @@ module.exports = [
   },
   {
     files: ['**/*.html'],
+    // Override or add rules here
     rules: {},
   },
 ];
