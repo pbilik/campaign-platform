@@ -1,0 +1,9 @@
+{
+  "name": "microfrontend-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/microfrontend-sample-e2e/src",
+  "implicitDependencies": ["microfrontend"],
+  "// targets": "to see all targets run: nx show project microfrontend-e2e --web",
+  "targets": {}
+}
